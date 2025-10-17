@@ -1,0 +1,26 @@
+﻿@model PurchaseOrderApp.Models.PurchaseOrderHeader
+
+@{
+    ViewData["Title"] = "Add Purchase Order";
+}
+
+<h2>Add Purchase Order</h2>
+
+<form asp-action="Add" method="post">
+    <div class="form-group mb-2">
+        <label>Supplier Name</label>
+        <input asp-for="SupplierName" class="form-control" required />
+    </div>
+
+    <div class="form-group mb-2">
+        <label>Payment Method</label>
+        <select asp-for="PaymentMethod" class="form-control" required>
+            <option value="">-- Select Payment --</option>
+            <option value="Cash">Cash</option>
+            <option value="Transfer">Transfer</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+    <a href="/Home/Index" class="btn btn-secondary">Back</a>
+</form>

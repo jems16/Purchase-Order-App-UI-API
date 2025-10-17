@@ -1,0 +1,25 @@
+﻿@model List<PurchaseOrderApp.Models.PurchaseOrderHeader>
+
+<h2>Purchase Orders</h2>
+<a href="/Home/Add">Add New</a>
+<table border="1" cellpadding="5">
+    <thead>
+        <tr>
+            <th>PO Number</th>
+            <th>Supplier Name</th>
+            <th>Order Date</th>
+            <th>Payment Method</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.PONumber</td>
+                <td>@order.SupplierName</td>
+                <td>@order.OrderDate.ToString("yyyy-MM-dd")</td>
+                <td>@order.PaymentMethod</td>
+            </tr>
+        }
+    </tbody>
+</table>
