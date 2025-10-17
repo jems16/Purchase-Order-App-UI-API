@@ -5,7 +5,7 @@ menggabungkan UI frontend dan API backend dalam satu aplikasi.
 
 ## Cara Menjalankan
 
-1. Clone repository: git clone https://github.com/username/PurchaseOrderApp.git
+1. Clone repository: git clone https://github.com/jems16/PurchaseOrderApp.git
 2. Buka project di Visual Studio 2022
 3. Jalankan aplikasi (F5 atau Ctrl+F5)
 4. Akses:
